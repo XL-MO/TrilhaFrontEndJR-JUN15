@@ -5,69 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação - Codigo Certo Coders</title>
     <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao meu perfil</h1>
+        <h1>Apresentação Pessoal</h1>
     </header>
     
-    <main>
-        <section id="foto">
-            <img src="Foto/foto.jpeg" alt="Minha Foto">
-        </section>
+    <div class="cursor"></div>
+
+    <nav>
+         <ul class="lista-navegacao">
+            <li><a href="#home" onclick="closeNav()">Informações Pessoais</a></li>
+            <li><a href="#sobre-mim" onclick="closeNav()">Sobre Mim</a></li>
+            <li><a href="#motivacoes" onclick="closeNav()">Motivações</a></li>
+            <li><a href="#artigos" onclick="closeNav()">Artigos</a></li>
+            <li><a href="#contato" onclick="closeNav()">Contato</a></li>
+                 </ul>
         
-        <section id="informacoes-pessoais">
-            <h2>Informações Pessoais</h2>
-            <p><strong>Nome:</strong> Gisely Meneses de Oliveira</p>
-            <p><strong>Idade:</strong> 39 </p>
-        </section>
+        </button>
         
-        <section id="sobre">
+        </button>
+    </nav>
+
+            <main>
+        <section id="home" class="container container-informacoes">
+            <div class="informacoes">
+                <span>Olá, eu sou</span>
+                <h1>Gisely Oliveira.</h1>
+                <p>Estudante de Front-end e Analista de Requisitos Jr.</p>
+                <a href="imagens/Currículo Gisely Oliveira.pdf" download target="_blank">
+                    Download CV
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+              </div>
+            <div class="banner">
+                     </div>
+        </section>
+
+        <section id="sobre-mim" class="container container-sobre-mim">
+            <div class="banner">
+                <img src="imagens/foto.jpeg" alt="avatar"/>
+            </div>
             <h2>Sobre Mim</h2>
-            <p>Sou uma Analista de Requisitos apaixonada por tecnologia e inovação. 
-                Minha jornada profissional tem sido marcada por uma busca constante por aprender e contribuir para projetos emocionantes.
-                
-                Definindo requisitos com precisão como Analista de Requisitos Júnior.
-                
-                Traduzindo complexidade em documentação técnica como Analista de Projetos Júnior.
-                
-                Impulsionando inovação na Secretaria de Estado de Desenvolvimento e Inovação (SEDI).
-                
-                Guiando e inspirando como facilitadora e mentora em programas de inovação.
-                
-                Graduada em Comunicação Social, explorando Análise de Desenvolvimento de Sistemas e apaixonada por gerenciamento de projetos e metodologias ágeis.
-                
-                Desbravando caminhos para o empreendedorismo e inovação na Comunidade StartupGo e como idealizadora da Comunidade MulheresGo.
-                
-                Pontos fortes que me definem:
-                
-                Agilidade em compreender e aplicar a Metodologia Ágil.
-                Maestria na comunicação, análise perspicaz e habilidades organizacionais.
-                Uma mãe, mulher e entusiasta da tecnologia, trazendo a maravilha de ambos os mundos para criar soluções excepcionais.
-                
-                Deixe-me encantar você com minha paixão pela tecnologia e dedicação em superar desafios. Conecte-se comigo:</p>
-        </section>
+            <p>Sou uma Analista de Requisitos apaixonada por tecnologia e inovação... (continua)</p>
+             </section>
         
-        <section id="gostos-pessoais">
-            <h2>Gostos Pessoais</h2>
-            <ul>
-                <li>Gosto 1</li>
-                <li>Gosto 2</li>
-                <li>Gosto 3</li>
-            </ul>
-        </section>
-        
-        <section id="motivacoes">
+                
+                 <section id="motivacoes">
             <h2>Motivações</h2>
-            <p>Quero fazer parte da comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo e voluntário para criar soluções que impactem a sociedade de maneira positiva. Estou animada para aprender, contribuir e crescer junto com a comunidade.</p>
+            <p>Quero fazer parte da comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo...</p>
         </section>
     </main>
 
-    <button onclick="editarConteudo()">Editar Conteúdo</button>
+                <section id="artigos" class="container container-artigos">
+        <div class="titulo-artigos">
+            <h2>Artigos</h2>
+            <i class="fa-solid fa-newspaper"></i>
+        </div>
+        <div class="wrapper">
+            <div class="cartao">
+                <div class="conteudo">
+                    <h2>01</h2>
+                    <h3>O Papel Divertido da Elicitação de Requisitos</h3>
+                    <a href="https://medium.com/@giselymoli/o-desbravador-de-necessidades-a86032225b6e" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+             <section id="contato" class="container container-contato">
+        <div class="titulo-contato">
+            <h2>Contato</h2>
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="container-formulario">
+            <form action="https://formsubmit.co/" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
 
-    <footer>
-        <p>Desenvolvido por Gisely Meneses de Oliveira</p>
-    </footer>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" rows="6" cols="54" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+             </section>
+
+             <footer>
+                <div class="footer-content">
+                    <p>Desenvolvido por Gisely Meneses de Oliveira</p>
+                    <div class="social-links">
+                     <a href="https://www.instagram.com/giselymov/" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gisely-oliveira/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </a></li>
+                    <li><a href="https://github.com/XL-MO" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a></li>
+                    </div>
+                </div>
+            </footer>
+            
 </body>
 </html>

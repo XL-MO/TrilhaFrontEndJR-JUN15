@@ -1,39 +1,145 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, form, input, textarea {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #e53939;
-    color: #ffffff;
-    padding: 20px;
+    background: #333;
+    color: #fff;
+    padding: 1rem;
     text-align: center;
 }
 
-h1, h2 {
-    margin: 0 0 10px 0;
+nav {
+    background: #444;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.lista-navegacao {
+    list-style: none;
+    display: flex;
+}
+
+.lista-navegacao li {
+    margin-right: 1rem;
+}
+
+.lista-navegacao a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 main {
-    padding: 20px;
+    padding: 2rem;
 }
 
-section {
-    margin-bottom: 20px;
+.container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-img {
-    max-width: 100%;
+.banner img {
+    width: %;
     height: auto;
-    border-radius: 50%;
+    border-radius: 8px;
 }
 
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+.titulo-artigos, .titulo-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
+
+.cartao {
+    background: #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.container-formulario {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #ffffff; /* Cor dos ícones */
+    font-size: 1.5em; /* Tamanho dos ícones */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #e53939; /* Cor ao passar o mouse */
+}
+
