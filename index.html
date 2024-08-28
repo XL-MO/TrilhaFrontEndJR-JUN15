@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação - Codigo Certo Coders</title>
+    <title>Apresentação - Gisely Oliveira</title>
     <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -15,103 +15,94 @@
     <div class="cursor"></div>
 
     <nav>
-         <ul class="lista-navegacao">
-            <li><a href="#home" onclick="closeNav()">Informações Pessoais</a></li>
-            <li><a href="#sobre-mim" onclick="closeNav()">Sobre Mim</a></li>
-            <li><a href="#motivacoes" onclick="closeNav()">Motivações</a></li>
-            <li><a href="#artigos" onclick="closeNav()">Artigos</a></li>
-            <li><a href="#contato" onclick="closeNav()">Contato</a></li>
-                 </ul>
-        
-        </button>
-        
-        </button>
+        <ul class="lista-navegacao">
+            <li><a href="#home" class="nav-home">Home</a></li>
+            <li><a href="#sobre-mim" class="nav-sobre-mim">Perfil</a></li>
+            <li><a href="#artigos" class="nav-artigos">Artigos</a></li>
+            <li><a href="#contato" class="nav-contato">Contato</a></li>
+        </ul>
     </nav>
 
-            <main>
-        <section id="home" class="container container-informacoes">
-            <div class="informacoes">
-                <span>Olá, eu sou</span>
-                <h1>Gisely Oliveira.</h1>
-                <p>Estudante de Front-end e Analista de Requisitos Jr.</p>
-                <a href="imagens/Currículo Gisely Oliveira.pdf" download target="_blank">
-                    Download CV
-                    <i class="fa-solid fa-angle-down"></i>
-                </a>
-              </div>
-            <div class="banner">
-                     </div>
+    <main>
+        <section id="home" class="container container-home">
+            <div class="sobre-mim">
+                <span></span>
+                <h1>Sou</h1>
+                <h2>Gisely Oliveira</h2>
+                <a href="caminho/para/seu/CV.pdf" class="botao-download" download>Download CV</a>
+                <div class="detalhes">
+                    <img src="imagens/foto.jpeg" alt="avatar"/>
+                </div>
+            </div>
         </section>
 
         <section id="sobre-mim" class="container container-sobre-mim">
-            <div class="banner">
-                <img src="imagens/foto.jpeg" alt="avatar"/>
+            <div class="perfil-titulo">
+                <h2>PERFIL</h2>
             </div>
-            <h2>Sobre Mim</h2>
-            <p>Sou uma Analista de Requisitos apaixonada por tecnologia e inovação... (continua)</p>
-             </section>
-        
-                
-                 <section id="motivacoes">
-            <h2>Motivações</h2>
-            <p>Quero fazer parte da comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo...</p>
+            <div class="perfil-conteudo">
+                <div class="imagem-perfil">
+                    <img src="imagens/gisely_meneses_de_oliveira.webp" alt="Imagem de Perfil"/>
+                </div>
+                <div class="info-motivacoes">
+                    <h3>Motivações</h3>
+                    <p>Quero fazer parte da comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo...</p>
+                </div>
+                <div class="inf-pessoais">
+                    <h3>Informações Pessoais</h3>
+                    <ul>
+                        <li><strong>Nome:</strong> Gisely Oliveira</li>
+                        <li><strong>Idade:</strong> 33 anos</li>
+                        <li><strong>Localização:</strong> Hertogenbosch, Holanda, Terra</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="artigos" class="container container-artigos">
+            <div class="titulo-artigos">
+                <h2>Artigos</h2>
+                <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div class="wrapper">
+                <div class="cartao">
+                    <div class="conteudo">
+                        <h2>01</h2>
+                        <h3>O Papel Divertido da Elicitação de Requisitos</h3>
+                        <a href="https://medium.com/@giselymoli/o-desbravador-de-necessidades-a86032225b6e" target="_blank">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="container container-contato">
+            <div class="titulo-contato">
+                <h2>Contato</h2>
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="container-formulario">
+                <form action="https://formsubmit.co/seuemail" method="POST">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required />
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required />
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="6" cols="54" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
-                <section id="artigos" class="container container-artigos">
-        <div class="titulo-artigos">
-            <h2>Artigos</h2>
-            <i class="fa-solid fa-newspaper"></i>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Gisely Oliveira. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/giselymov/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/gisely-oliveira/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/XL-MO" target="_blank"><i class="fab fa-github"></i></a>
+            </div>                    
         </div>
-        <div class="wrapper">
-            <div class="cartao">
-                <div class="conteudo">
-                    <h2>01</h2>
-                    <h3>O Papel Divertido da Elicitação de Requisitos</h3>
-                    <a href="https://medium.com/@giselymoli/o-desbravador-de-necessidades-a86032225b6e" target="_blank">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-             <section id="contato" class="container container-contato">
-        <div class="titulo-contato">
-            <h2>Contato</h2>
-            <i class="fa-solid fa-laptop-code"></i>
-        </div>
-        <div class="container-formulario">
-            <form action="https://formsubmit.co/" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome" required />
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required />
-
-                <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem" rows="6" cols="54" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
-             </section>
-
-             <footer>
-                <div class="footer-content">
-                    <p>Desenvolvido por Gisely Meneses de Oliveira</p>
-                    <div class="social-links">
-                     <a href="https://www.instagram.com/giselymov/" target="_blank" title="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/gisely-oliveira/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </a></li>
-                    <li><a href="https://github.com/XL-MO" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a></li>
-                    </div>
-                </div>
-            </footer>
-            
+    </footer>
 </body>
 </html>
