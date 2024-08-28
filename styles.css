@@ -70,19 +70,46 @@ main {
 /* Home */
 .container-home {
     text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #fc847f, #f22d42);
+    color: #fff; /* Cor do texto */
+    border-radius: 8px; /* Bordas arredondadas */
 }
 
-.detalhes img {
-    width: 150px;
-    height: 150px;
+.home-content {
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente no centro */
+    justify-content: center; /* Alinha itens horizontalmente no centro */
+    text-align: left; /* Alinha o texto à esquerda dentro do container */
+}
+
+/* Estilo da imagem e do nome */
+.imagem-nome {
+    display: flex;
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+}
+
+.imagem-perfil img {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 300px; /* Ajuste o tamanho da imagem conforme necessário */
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-right: 2rem; /* Espaçamento entre a imagem e o texto */
 }
 
+.nome-perfil {
+    max-width: 600px; /* Limita a largura do texto */
+}
+
+.nome-perfil h1 {
+    font-size: 3rem; /* Tamanho do texto "SOU Gisely Oliveira" */
+    margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Botão de Download */
 .botao-download {
     display: inline-block;
-    background-color: #e53939;
-    color: #fff;
+    background-color: #fff; /* Cor do fundo do botão */
+    color: #e53939; /* Cor do texto do botão */
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -93,69 +120,81 @@ main {
 }
 
 .botao-download:hover {
-    background-color: #c1272d;
+    background-color: #f2f2f2; /* Cor de fundo ao passar o mouse */
+    color: #e53939; /* Cor do texto ao passar o mouse */
 }
 
 /* Perfil */
 .container-sobre-mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 2rem;
 }
 
-.perfil-titulo h2 {
-    font-size: 2rem;
-    color: #333;
-}
-
-.perfil-conteudo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.imagem-perfil {
-    flex: 1;
+.perfil-titulo {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
-.imagem-perfil img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-}
-
-.info-motivacoes {
-    flex: 2;
-    text-align: left;
-    padding: 0 2rem;
-}
-
-.info-motivacoes h3 {
-    font-size: 1.5rem;
+.perfil-titulo h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #e53939; /* Linha abaixo do título */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
-.inf-pessoais {
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.motivos,
+.info-pessoais {
     flex: 1;
-    text-align: left;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
-.inf-pessoais h3 {
+.motivos h3,
+.info-pessoais h3 {
     font-size: 1.5rem;
+    font-weight: bold;
     color: #333;
+    margin-bottom: 1rem;
 }
 
-.inf-pessoais ul {
+.motivos p,
+.info-pessoais ul {
+    font-size: 1rem;
+    color: #666;
+}
+
+.info-pessoais ul {
     list-style: none;
     padding: 0;
 }
 
-.inf-pessoais ul li {
-    margin-bottom: 10px;
+.info-pessoais ul li {
+    margin-bottom: 0.5rem;
+}
+
+.imagem-container {
+    tflex: 0 0 auto;
+    text-align: center;
+}
+
+
+.imagem-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #e53939;
 }
 
 /* Artigos */
@@ -173,7 +212,7 @@ main {
 }
 
 .cartao {
-    background-color: #fff;
+    background-color: #f70909;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
