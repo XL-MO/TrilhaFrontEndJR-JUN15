@@ -6,8 +6,12 @@
     <title>Apresentação - Gisely Oliveira</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+  </head>
 <body>
+   
     <header>
         <h1>Apresentação Pessoal</h1>
     </header>
@@ -28,37 +32,59 @@
             <div class="home-content">
                 <div class="imagem-nome">
                     <div class="imagem-perfil">
-                        <img src="imagens/WhatsApp Image 2024-08-27 at 23.jpg" alt="Imagem de Perfil"/>
-                    </div>
-                    <div class="nome-perfil">
-                        <h1>Sou
-                            <p> Gisely Oliveira</p>
-                        </h1>
-                        <a href="caminho/para/seu/CV.pdf" class="botao-download" download>Download CV</a>
+                        <img src="imagens/Design sem nome (1).png" alt="Imagem de Perfil"/>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="sobre-mim" class="container-sobre-mim">
+        <section id="sobre-mim" class="container container-sobre-mim">
             <div class="perfil-titulo">
                 <h2>Perfil</h2>
             </div>
             <div class="content-container">
-                <div class="motivos">
-                    <h3>Motivações</h3>
-                    <p>Quero fazer parte da comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo...</p>
+                <!-- Tópico "Sobre Mim" -->
+                <div class="sobre-mim">
+                    <h3><i class="fa fa-user"></i> Sobre Mim</h3>
+                    <ul>
+                        <li><strong>Descrição Pessoal:</strong> Sou Gisely Oliveira, uma profissional apaixonada pela área de programação e desenvolvimento de software. Com uma trajetória marcada por desafios e conquistas, tenho dedicado minha carreira ao aprimoramento contínuo e à busca por soluções criativas e eficientes. Sou entusiasta do aprendizado e sempre busco novas oportunidades para expandir meus conhecimentos e habilidades.</li>
+                        <li><strong>Objetivos de Carreira:</strong> Meu objetivo é crescer continuamente na área de desenvolvimento de software, especialmente em front-end e experiência do usuário. Busco oportunidades que me permitam enfrentar desafios complexos e colaborar com equipes inovadoras para criar soluções impactantes. Estou comprometida em contribuir para projetos que não só atendam às necessidades dos usuários, mas também superem suas expectativas.</li>
+                        <li><strong>Áreas de Interesse:</strong> Tenho um profundo interesse em design de interfaces e experiência do usuário, e estou sempre atualizada com as últimas tendências e tecnologias da área. Além disso, tenho um grande entusiasmo por aprendizado contínuo e estou em constante busca por novas ferramentas e técnicas que possam aprimorar minhas habilidades profissionais.</li>
+                    </ul>
                 </div>
-                <div class="imagem-container">
-                    <img src="imagens/gisely_meneses_de_oliveira.webp" alt="Imagem de Perfil"/>
-                </div>
+
+                <!-- Tópico "Informações Pessoais" -->
                 <div class="info-pessoais">
-                    <h3>Informações Pessoais</h3>
+                    <h3><i class="fa fa-female"></i> Informações Pessoais</h3>
                     <ul>
                         <li><strong>Nome:</strong> Gisely Oliveira</li>
-                        <li><strong>Idade:</strong> 33 anos</li>
-                        <li><strong>Localização:</strong> Terra</li>
+                        <li><strong>Idade:</strong> 39 anos</li>
+                        <li><strong>Localização:</strong> Goiânia - Goiás</li>
+                        <li><strong>Formação:</strong>
+                            <ul>
+                                <li>Análise e Desenvolvimento de Sistemas (Pontifícia Universidade Católica de Goiás)</li>
+                                <li>Inovação e Liderança na Gestão de Projetos + Módulo adicional de Soft Skills (ISCTE - Instituto Universitário de Lisboa)</li>
+                                <li>Cursos em Fundamentos de Programação, HTML5, CSS3, JavaScript, Flutter, PHP com Laravel, entre outros (Imã Tech)</li>
+                            </ul>
+                        </li>
                     </ul>
+
+                    <!-- Botão de Download -->
+                    <a href="URL_DO_SEU_CURRICULO.pdf" download="Curriculo_Gisely_Oliveira.pdf" class="btn-download">
+                        Download do Currículo
+                    </a>
+                </div>
+
+                <!-- Tópico "Motivações" -->
+                <div class="motivos">
+                    <h3><i class="fa fa-thumbs-up"></i> Motivações</h3>
+                    <p>Estou entusiasmada em me juntar à comunidade Codigo Certo Coders porque acredito no poder do trabalho colaborativo e na importância de compartilhar conhecimento. Participar dessa comunidade me permitirá colaborar com outros profissionais apaixonados, trocar experiências e aprender novas técnicas. Acredito que, juntos, podemos criar soluções inovadoras e impactantes para os desafios que enfrentamos no mundo da programação.</p>
+                </div>
+
+                <!-- Tópico "Gostos Pessoais" -->
+                <div class="gostos-pessoais">
+                    <h3><i class="fa fa-heart"></i> Gostos Pessoais</h3>
+                    <p>Adoro passar tempo com minha família, viajar e me envolver em trabalho voluntário. Acredito que esses interesses não só me enriquecem pessoalmente, mas também me ajudam a crescer como profissional. Passar tempo com minha família é uma prioridade, pois me dá força e inspiração para enfrentar os desafios diários. Viajar me proporciona novas perspectivas e experiências, enquanto o trabalho voluntário me permite contribuir para causas que são importantes para mim.</p>
                 </div>
             </div>
         </section>
@@ -67,29 +93,64 @@
             <div class="titulo-artigos">
                 <h2>Artigos</h2>
             </div>
-            <div class="wrapper">
-                <div class="cartao">
-                    <div class="conteudo">
-                        <h2>01</h2>
-                        <h3>O Papel Divertido da Elicitação de Requisitos</h3>
-                        <a href="https://medium.com/@giselymoli/o-desbravador-de-necessidades-a86032225b6e" target="_blank">Saiba mais</a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <div class="conteudo">
+                                <h3>O Papel Divertido da Elicitação de Requisitos</h3>
+                                <p>Bem-vindo(a) ao mundo da elicitação de requisitos, onde a busca por necessidades se transforma em uma aventura emocionante e repleta de descobertas.</p>
+                                <a href="https://medium.com/@giselymoli/o-desbravador-de-necessidades-a86032225b6e" target="_blank">Saiba mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <h3>10º Startup Day conecta ideias e empreendedores em Goiás</h3>
+                            <p>Evento coloca como protagonista o universo de startups durante todo um dia de discussões e networking.</p>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7186360755871485952/" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <h3>“Passei por um Furacão Musical: Meu Fantástico Clone do Spotify!”</h3>
+                            <p>Ei, pessoal! Preparem-se para testemunhar a saga mais emocionante e repleta de raiva da minha vida: o meu Clone do Spotify!</p>
+                            <a href="https://medium.com/@giselymoli/passei-por-um-furac%C3%A3o-musical-meu-fant%C3%A1stico-clone-do-spotify-957c9920774" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <h3>Porque valemos a pena: mulheres na tecnologia </h3>
+                            <p>A tecnologia se tornou um dos setores de crescimento mais rápido no mundo, especialmente porque a demanda por iniciativas digitais aumentou devido à pandemia.</p>
+                            <a href="https://www.linkedin.com/pulse/porque-valemos-pena-mulheres-na-tecnologia-gisely-oliveira/?trackingId=CXuDMLqERKmpcHQR12x4Xg%3D%3D" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="cartao">
+                            <h3>Projeto - LojaVirtual</h3>
+                            <p>Desenvolver este projeto não foi isento de desafios. Um dos maiores obstáculos foi garantir que o site fosse otimizado para diferentes navegadores e dispositivos. Este projeto é mais do que um simples conjunto de códigos. Ele reflete meu compromisso com o curso ofertado pelo Imã Tech</p>
+                            <a href="https://www.linkedin.com/feed/update/urn:li:activity:7094332562352803841/" target="_blank">Saiba mais</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Adicionando os botões de navegação e a paginação fora dos slides -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
         <section id="contato" class="container container-contato">
             <div class="titulo-contato">
                 <h2>Contato</h2>
-                <i class="fa-solid fa-laptop-code"></i>
             </div>
             <div class="container-formulario">
-                <form action="https://formsubmit.co/seuemail" method="POST">
-                    <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome" required />
-                    <label for="email">E-mail</label>
+                <form id="edit-form" method="POST" action="/update-content">
+                    <label for="newContent">Insira seu Nome</label>
+                    <textarea id="newContent" name="newContent" rows="2" cols="50"></textarea>
+                    <label for="email">Insira seu E-mail</label>
                     <input type="email" id="email" name="email" required />
-                    <label for="mensagem">Mensagem</label>
+                    <label for="mensagem">Insira sua Mensagem</label>
                     <textarea name="mensagem" id="mensagem" rows="6" cols="54" required></textarea>
                     <button type="submit">Enviar</button>
                 </form>
@@ -107,5 +168,32 @@
             </div>                    
         </div>
     </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                },
+            });
+        });
+    </script>
 </body>
 </html>
